@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescued Souls - Animal Rescue Platform</title>
+    <meta name="description" content="Community-driven platform to rescue, rehabilitate, and rehome stray and abandoned animals">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4F46E5",
+                        secondary: "#10B981",
+                        accent: "#F59E0B"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-paw text-primary text-2xl"></i>
+                <h1 class="text-xl font-bold text-gray-800">RESCUED SOULS</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-primary transition">About</a>
+                <a href="#features" class="text-gray-600 hover:text-primary transition">Features</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-primary transition">How It Works</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition">Contact</a>
+            </div>
+            <div class="flex space-x-4">
+                <button class="px-4 py-2 bg-primary text-white rounded-md hover:bg-opacity-90 transition">Login</button>
+                <button class="px-4 py-2 border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Rescue, Rehabilitate, Rehome</h1>
+                <p class="text-xl mb-8">A community-driven platform connecting volunteers, pet parents, and veterinarians to help animals in need.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="px-6 py-3 bg-accent text-white rounded-md hover:bg-opacity-90 transition font-medium">Report an Animal</button>
+                    <button class="px-6 py-3 bg-white text-primary rounded-md hover:bg-opacity-90 transition font-medium">Adopt a Pet</button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://picsum.photos/600/400?random=1" alt="Happy rescued dog with volunteer" class="rounded-lg shadow-xl" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Mission</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg text-gray-600 mb-6">Animals play a vital role in the ecological balance and emotional well-being of humans. However, stray, injured, and abandoned animals often suffer due to a lack of proper care, medical attention, and safe shelter.</p>
+                    <p class="text-lg text-gray-600 mb-6">Rescued Souls is a community-driven platform designed to rescue, rehabilitate, and rehome such animals, ensuring they receive the care and support they deserve.</p>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Key Objectives</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Provide a platform for volunteers to report and coordinate rescues</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Facilitate medical care and rehabilitation through vets and shelters</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Create a database of rescued animals</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 mr-2"></i>
+                                <span>Raise awareness and encourage community participation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://picsum.photos/300/300?random=2" alt="Volunteer feeding stray dogs" class="rounded-lg shadow-md" loading="lazy">
+                    <img src="https://picsum.photos/300/300?random=3" alt="Veterinarian examining a cat" class="rounded-lg shadow-md" loading="lazy">
+                    <img src="https://picsum.photos/300/300?random=4" alt="Happy adopted dog with family" class="rounded-lg shadow-md" loading="lazy">
+                    <img src="https://picsum.photos/300/300?random=5" alt="Animal shelter facility" class="rounded-lg shadow-md" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Platform Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Volunteer Module -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-primary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-hands-helping text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Volunteer Module</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-2 text-sm"></i>
+                            <span>Report stray/injured animals with photos and locations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-2 text-sm"></i>
+                            <span>Update rescue status in real-time</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-2 text-sm"></i>
+                            <span>Coordinate with nearby shelters and vets</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Pet Parent Module -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-secondary bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-home text-secondary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Pet Parent Module</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-2 text-sm"></i>
+                            <span>Browse pets information and adoption options</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-2 text-sm"></i>
+                            <span>Request vet appointments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-2 text-sm"></i>
+                            <span>Chat with other pet parents and volunteers</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-2 text-sm"></i>
+                            <span>Rent a companion program</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Vet/Shelter Module -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-accent bg-opacity-10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-clinic-medical text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Vet/Shelter Module</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-2 text-sm"></i>
+                            <span>Update medical reports and vaccination details</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-2 text-sm"></i>
+                            <span>List available space for rescued animals</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-2 text-sm"></i>
+                            <span>Participate in rent a companion program</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">How It Works</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+                    <h3 class="text-lg font-semibold mb-2">Report</h3>
+                    <p class="text-gray-600">Volunteers report stray or injured animals with photos and location</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+                    <h3 class="text-lg font-semibold mb-2">Rescue</h3>
+                    <p class="text-gray-600">Nearest volunteers coordinate rescue operations</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+                    <h3 class="text-lg font-semibold mb-2">Rehabilitate</h3>
+                    <p class="text-gray-600">Animals receive medical care and shelter</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">4</div>
+                    <h3 class="text-lg font-semibold mb-2">Rehome</h3>
+                    <p class="text-gray-600">Animals find loving forever homes or temporary companions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">1,250+</div>
+                    <div class="text-lg">Animals Rescued</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">500+</div>
+                    <div class="text-lg">Happy Adoptions</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">200+</div>
+                    <div class="text-lg">Active Volunteers</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">50+</div>
+                    <div class="text-lg">Partner Shelters</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Make a Difference?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join our community of animal lovers and help us rescue more souls in need.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="px-6 py-3 bg-white text-primary rounded-md hover:bg-opacity-90 transition font-medium">Become a Volunteer</button>
+                <button class="px-6 py-3 border border-white text-white rounded-md hover:bg-white hover:text-primary transition font-medium">Donate Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                    <p class="text-gray-600 mb-6">Have questions or want to partner with us? Reach out to our team.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-primary mt-1 mr-3"></i>
+                            <span>contact@rescuedsouls.org</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-primary mt-1 mr-3"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <span>123 Animal Rescue Ave, City, Country</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-3">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-primary transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-primary transition"><i class="fab fa-twitter text-xl"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-primary transition"><i class="fab fa-instagram text-xl"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-primary transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-gray-50 p-6 rounded-lg">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-2 bg-primary text-white rounded-md hover:bg-opacity-90 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-paw text-primary text-2xl"></i>
+                        <h3 class="text-xl font-bold">RESCUED SOULS</h3>
+                    </div>
+                    <p class="text-gray-400">A community-driven platform to rescue, rehabilitate, and rehome animals in need.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition">Features</a></li>
+                        <li><a href="#how-it-works" class="text-gray-400 hover:text-white transition">How It Works</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Adoption Guide</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Volunteer Handbook</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pet Care Tips</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates and success stories.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-md w-full focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-primary px-4 py-2 rounded-r-md hover:bg-opacity-90 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Rescued Souls. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
